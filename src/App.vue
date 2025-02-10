@@ -8,6 +8,7 @@
     :products="filterProducts"
     @add-to-cart="addToCart"
     :cart="cartList"
+    @remove-cart-id="removeCart"
     @clear-cart="clearCart"
     />
   </div>
