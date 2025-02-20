@@ -16,7 +16,7 @@
     </div>
     <div class="cart-add">
         <h2>주문내역</h2>
-        <div>
+        <div class="total">
             <p>상품 금액 : {{ totalPrice }} </p>
             <p>배송비    : {{shippingFee === 0 ? "무료" : `${shippingFee}원` }} </p>
             <p>(배송비 3,000원 5만원 이상 구매시 무료배송)</p>
@@ -74,6 +74,9 @@ const payment = computed(()=>{
 </script>
 <style lang="scss" scoped>
 .cart{
+    h2{
+          
+    }
     display: flex;
     padding: 2rem 5rem;
     gap: 1rem;
@@ -83,6 +86,17 @@ const payment = computed(()=>{
         border-radius: 5px;
     }
     .cart-list{
+        background-color: rgb(255, 255, 255);
+        border: solid 1px rgba(0, 0, 0, 0.3);
+        h2{
+            text-align: center;
+            padding: 10px;
+        }
+        h3{
+            padding: 20px;
+            text-align: center;
+            color: #383737;
+        }
         ul{
             img{
                 width: 200px;
@@ -98,9 +112,18 @@ const payment = computed(()=>{
         }
     }
     .cart-add{
+        background-color: rgb(255, 255, 255);
+        border: solid 1px rgba(0, 0, 0, 0.3);
+        h2{
+            text-align: center;
+            padding: 10px;
+        }
         .total{
             border: none;
             padding: 1rem;
+            font-weight: bold;
+            color: #2e2c2c;
+            font-size: 18px;
         }
     }
 }

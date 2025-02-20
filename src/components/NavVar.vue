@@ -1,6 +1,6 @@
 <template>
     <nav>
-        <h1>햄부가티</h1>
+        <h1>쿠야</h1>
         <div class="router-link">
             <router-link to="/">상품목록</router-link>
             <router-link to="/cart">장바구니</router-link>
@@ -32,6 +32,15 @@ import { useRouter } from 'vue-router';
         display: flex;
         justify-content: space-between;
         padding: 2rem 5rem;
+        h1{
+            font-size: 35px;
+            color: rgb(95, 79, 92);
+        }
+        .router-link{
+                a{
+                    text-decoration: none;
+                }
+                   }
         ul{
             display: flex;
             gap: 3rem;
@@ -39,7 +48,7 @@ import { useRouter } from 'vue-router';
                 cursor: pointer;
                 &:hover{
                     font-weight: bolder;
-                    color: blue;
+                    color: rgb(179, 46, 123);
                 }
             }
         }
