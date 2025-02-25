@@ -20,7 +20,7 @@
             <p>상품 금액 : {{ totalPrice }} </p>
             <p>배송비    : {{shippingFee === 0 ? "무료" : `${shippingFee}원` }} </p>
             <p>(배송비 3,000원 5만원 이상 구매시 무료배송)</p>
-            <p>총 결제금액 : {{ payment }}  </p>
+            <p>총 결제금액 : {{ payment }} 원  </p>
             <button @click="handleOpen">주문결제</button>
         </div>
     </div>
@@ -109,11 +109,26 @@ const payment = computed(()=>{
                 align-items: center;
                 padding: 1rem;
             }
+            p{
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+        button{
+            margin: 30px;
+            width: 150px;
+            height: 30px;
+            cursor: pointer;
         }
     }
     .cart-add{
+        text-align: center;
         background-color: rgb(255, 255, 255);
         border: solid 1px rgba(0, 0, 0, 0.3);
+        p{
+            padding: 5px;
+            font-size: 20px;
+        }
         h2{
             text-align: center;
             padding: 10px;
@@ -124,6 +139,12 @@ const payment = computed(()=>{
             font-weight: bold;
             color: #2e2c2c;
             font-size: 18px;
+        }
+        button{
+            margin: 30px;
+            width: 150px;
+            height: 30px;
+            cursor: pointer;
         }
     }
 }

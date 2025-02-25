@@ -32,6 +32,7 @@
         text-align: center;
         p:nth-of-type(1){
             padding: 5px;
+            font-size: 20px;
             font-weight: bold;
         }
         p:nth-of-type(2){

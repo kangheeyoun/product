@@ -20,6 +20,7 @@
 
 <style lang="scss" scoped>
  .modal-overlay{
+    text-align: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -32,6 +33,17 @@
     .modal{
         background-color: #fff;
         padding: 3rem 5rem;
+        h2{
+            padding-bottom: 30px;
+        }
+        p{
+            padding-bottom: 30px;
+        }
+        button{
+            width: 150px;
+            height: 30px;
+            cursor: pointer;
+        }
     }
  }
 

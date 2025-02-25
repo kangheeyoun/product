@@ -37,8 +37,12 @@ import { useRouter } from 'vue-router';
             color: rgb(95, 79, 92);
         }
         .router-link{
-                a{
+                a{  
                     text-decoration: none;
+                    cursor: pointer;
+                    &:hover{
+                        color: #fff;
+                    }
                 }
                    }
         ul{
